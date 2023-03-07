@@ -3,7 +3,7 @@ package com.plugin.gestioneIncident.demo.model;
 import java.util.Objects;
 
 public class Assegnatario {
-	//prova
+	
 	private int idCodiceAssegnatario;
 	private String nomeAssegnatario;
 	private String cognomeAssegnatario;
