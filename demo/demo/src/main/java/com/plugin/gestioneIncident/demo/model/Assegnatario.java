@@ -4,6 +4,7 @@ import java.util.Objects;
 
 public class Assegnatario {
 	
+	//id univoco
 	private int idCodiceAssegnatario;
 	private String nomeAssegnatario;
 	private String cognomeAssegnatario;
