@@ -4,8 +4,11 @@ import java.io.File;
 
 public class Allegato {
 
+	// id del codice
 	private String idCodice;
+	//nome allegato
 	private String nomeAllegato;
+	//file allegato
 	private File file;
 
 	public Allegato(String idCodice, String nomeAllegato, File file) {
