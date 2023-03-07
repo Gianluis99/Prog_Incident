@@ -1,6 +1,7 @@
 package com.plugin.gestioneIncident.demo.model;
 
 import java.sql.Date;
+import java.util.List;
 import java.util.Objects;
 
 public class Incident {
@@ -24,7 +25,8 @@ public class Incident {
 	private int idCodiceAssistente;
 	private String idTipologia;
 	private String idStato;
-	
+	private List<Allegato> allegati;
+
 	public Incident(String idCodice, Date dataArrivo, Date dataChiusura, String generatoDa, boolean deleted,
 			String ogetto_Inc, String inc_RiferimentoPerPBI, int tokenPrevisti, int tokenUtilizzati, int numeroGiorni,
 			int numeroPersone, String analisi, String sintesi, String nomePiattaforma, String idPriority,
@@ -221,6 +223,14 @@ public class Incident {
 				numeroPersone, ogetto_Inc, sintesi, tokenPrevisti, tokenUtilizzati);
 	}
 
+	public List<Allegato> getAllegati() {
+		return allegati;
+	}
+
+	public void setAllegati(List<Allegato> allegati) {
+		this.allegati = allegati;
+	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -242,7 +252,5 @@ public class Incident {
 				&& Objects.equals(sintesi, other.sintesi) && tokenPrevisti == other.tokenPrevisti
 				&& tokenUtilizzati == other.tokenUtilizzati;
 	}
-	
-	
-	
+
 }
