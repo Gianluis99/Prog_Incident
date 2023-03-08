@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		 <link rel="stylesheet" href="CSS/styles.css">
+        <title>Registrazione</title>   
+    </head>
+    <body >
+        <form method="post" action="/php/register.php">
+            <h1 id="titolo">Registrazione</h1>
+            <label><b>Nome</b></label>
+            <input type="text" id="nome" placeholder="Nome" name="nome" maxlength="50"  required>
+            <p></p>
+            <label><b>Cognome</b></label>
+            <input type="text" id="cognome" placeholder="Cognome" name="nome" maxlength="50" required>
+            <p></p>
+            <label><b>Username</b></label>
+            <input type="text" id="username" placeholder="Username" name="username" maxlength="50" required>
+            <p></p>
+            <label><b>Email</b></label>
+            <input type="text" id="email" placeholder="Email" name="email" maxlength="50" required>
+            <p></p>
+            <label><b>Password</b></label>
+            <input type="password" id="password" placeholder="Password" name="password" required>
+            <p></p>
+            <button type="submit" name="register">Registrati</button>
+            <p>Don't have an Account? <a href="#"> Login Now!</a></p>
+        </form>
+    </body>
+</html>
