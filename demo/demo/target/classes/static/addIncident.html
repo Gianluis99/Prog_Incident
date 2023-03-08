@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+    <title>Registra Incident</title> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link>
+</head>
+<body style="background-color:lightgrey;">
+	<div class="container">
+		<p style="color: blue; font-size: larger; font-style: italic;"  class="text-center"><b>REGISTRA INCIDENT</b></p>	<br>
+		<div class="row">
+		<div class="col mb-2">
+			<label><b> Id Incidente</b> </label>         
+			<input type="text" class="form-control" placeholder="Id Incidente" name="Id Incidente" />   
+		</div>
+		<div class="col mb-2">
+			<label> <b>Generato da</b> </label>         
+			<input type="text" class="form-control" placeholder="Generato Da" name="Generato Da" />  
+		</div>
+		<div class="col mb-2">
+			<label> <b>Oggetto Incidente</b> </label>         
+			<input type="text" class="form-control" placeholder="Oggetto Incidente" name="Oggetto Incidente" /> 
+		</div>
+		<div class="col mb-2">
+			<label><b> Incidente Riferimento</b> </label>         
+			<input type="text" class="form-control" placeholder="Incidente Riferimento per PBI" name="Incidente Riferimento"/>   
+		</div>
+		</div>
+		<div class="row">
+			<div class="col mb-2">			
+				<label for="start"><b> Data Arrivo</b> </labe>     
+				<input type="date" class="form-control" id="start" placeholder="Data Arrivo" style="width: 250px;" name="Data Arrivo" />    
+			</div>
+			<div class="col mb-2">
+				<label><b>Token Previsti</b></label>        
+				<input type="text" class="form-control" placeholder="Token Previsti" name="Token Previsti"/> 
+			</div>
+			<div class="col mb-2">
+				<label><b>Numero Persone</b></label> 	       
+				<input type="text" class="form-control" placeholder="Numero Persone" name="Numero Persone" /> 
+			</div>		
+		</div>
+		<div class="row">
+			<div class="col mb-2">
+				<label for="Nome Piattaforma"><b>Nome Piattaforma</b></label>
+				<select class="form-control" name="nomePiattaforma" id="nomePiattaforma">
+					<option value=""></option>
+					<option value="Strong">Strong</option>
+					<option value="UMP">UMP</option>
+					<option value="WSSO">WSSO</option><br>
+					<option value="VIM">VIM</option>
+					<option value="VAM">VAM</option>
+					<option value="AITR">AITR</option>
+				</select>
+			</div>
+			<div class="col mb-2">
+				<label for="Priority"><b>Priority</b></label>
+				<select class="form-control" name="priority" id="priority">
+					<option value=""></option>
+					<option value="Critical">Critical</option>
+					<option value="High">High</option>
+					<option value="Moderate">Moderate</option>
+					<option value="Low">Low</option>
+				</select>
+			</div>
+			<div class="col mb-2">
+				<label for="Impact"><b>Impact</b></label>
+				<select class="form-control" name="impact" id="impact">
+					<option value=""></option>	
+					<option value="Critical">Critical</option>
+					<option value="High">High</option>
+					<option value="Moderate">Moderate</option>
+					<option value="Low">Low</option>
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col mb-2"> 
+				<label for="Tipologia"><b>Tipologia</b></label>
+				<select class="form-control" name="tipologia" id="tipologia">
+					<option value=""></option>
+					<option value="INC">INC</option>
+					<option value="PBI">PBI</option>
+					<option value="SR">SR</option>
+				</select>  
+			</div>
+			<div class="col mb-2">
+				<label for="Assegnatario"><b>Assegnatario</b></label>
+				<select class="form-control" name="assegnatario" id="assegnatario">
+					<option value=""></option>
+					<option value="X">X</option>
+					<option value="Y">Y</option>
+					<option value="Z">Z</option>
+				</select>      
+			</div>
+			<div class="col mb-2">  
+				<label for="Stato"> <b>Stato</b></label>
+				<select class="form-control" name="stato" id="stato">
+					<option value=""></option>
+					<option value="CODA VF">CODA VF</option>
+					<option value="CHIUSO">CHIUSO</option>
+					<option value="CODA NTT">CODA NTT</option>	
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col form-floating mb-2">
+	  			<textarea class="form-control" placeholder="Analisi" id="Analisi" style="height: 100px"></textarea>
+			</div>
+		</div>
+		<div>
+			<div class="form-floating mb-2">
+  			<textarea class="form-control" placeholder="Sintesi" id="Sintesi" style="height: 100px"></textarea>
+			</div>
+		</div>		
+		<div class="mt-2 mb-2">
+			<label for="myFile"><b>Inserisci allegati</b></label>
+			<input type="file" id="myFile" name="myFile" multiple>
+			</input>
+		</div>
+		<div class=" text-center mb-2">
+		<button type="submit" class="btn btn-outline-primary">REGISTRA INCIDENT</button>
+		</div>
+	</div>
+</body>
+
+</html>

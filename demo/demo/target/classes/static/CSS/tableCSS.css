@@ -1,0 +1,22 @@
+#tab {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin-bottom:30px;
+  margin-left: 10%;
+  margin-right:10%;
+}
+
+#tab td, #customers th {
+  border: 2px solid black;
+  padding: 8px;
+  background-color: lightgoldenrodyellow;
+}
+
+#tab th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: black;
+}

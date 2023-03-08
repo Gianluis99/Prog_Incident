@@ -1,0 +1,90 @@
+body {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background: rgb(255, 255, 255) !important;
+	text-align: center;
+}
+
+h2 {
+	color: rgb(9, 32, 196);
+	text-align: center;
+	padding-bottom: 20%;
+
+}
+
+
+
+
+input[type=text],
+input[type=password] {
+
+	width: 100%;
+	padding: 8px 8px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+
+
+input[type=text]:hover,
+input[type=password]:hover {
+
+	border-color: blue;
+	border-width: 3px;
+}
+
+input[type=submit] {
+	width: 50%;
+	background-color: rgb(0, 0, 255);
+	color: white;
+	padding: 3%;
+	border-radius: 4px;
+	cursor: pointer;
+	border: none;
+	box-shadow: 1px 1px 1px 1px rgb(223, 223, 223);
+
+}
+
+#buttonRegistration {
+	color: rgb(4, 71, 183);
+	width: 50%;
+	padding: 3%;
+	cursor: pointer;
+
+
+
+}
+
+
+
+input[type=submit]:hover {
+	background-color: rgb(0, 0, 128);
+}
+
+form {
+	border-radius: 5px;
+	background-color: rgb(248, 248, 248);
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 2%;
+	padding-bottom: 10%;
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-top: 6%;
+	text-align: left;
+	justify-content: space-between;
+	color: rgb(114, 114, 114);
+
+	box-shadow: 3px 3px 3px 3px rgb(128, 128, 128);
+
+
+}
+
+.divButton {
+	margin-top: 20%;
+	text-align: center;
+
+}
