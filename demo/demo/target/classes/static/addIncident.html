@@ -8,6 +8,7 @@
 <body style="background-color:lightgrey;">
 	<div class="container">
 		<p style="color: blue; font-size: larger; font-style: italic;"  class="text-center"><b>REGISTRA INCIDENT</b></p>	<br>
+		<form method="post" action="/php/register.php">
 		<div class="row">
 		<div class="col mb-2">
 			<label><b> Id Incidente</b> </label>         
@@ -110,7 +111,8 @@
 		</div>
 		<div>
 			<div class="form-floating mb-2">
-  			<textarea class="form-control" placeholder="Sintesi" id="Sintesi" style="height: 100px"></textarea>
+  			<textarea class="form-control" placeholder="Sintesi" id="Sintesi" style="height: 100px" maxlength="255"></textarea>
+  			<p style="text-align: right; color: red; font-size: smaller;">max lenght 255</p>
 			</div>
 		</div>		
 		<div class="mt-2 mb-2">
@@ -121,6 +123,7 @@
 		<div class=" text-center mb-2">
 		<button type="submit" class="btn btn-outline-primary">REGISTRA INCIDENT</button>
 		</div>
+		</form>
 	</div>
 </body>
 
