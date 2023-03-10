@@ -61,10 +61,24 @@
 				<!-- Modal Header -->
 				<div class="modal-header">Inserisci Token Piattaforma</div>
 				<!-- Modal body -->
-				<div class="modal-body">Ciao mondo</div>
+				<div class="modal-body">
+					<label for="Nome Piattaforma"><b>Nome Piattaforma</b></label>
+					<select class="form-control" name="nomePiattaforma" id="nomePiattaforma">
+						<option value=""></option>
+						<option value="Strong">Strong</option>
+						<option value="UMP">UMP</option>
+						<option value="WSSO">WSSO</option><br>
+						<option value="VIM">VIM</option>
+						<option value="VAM">VAM</option>
+						<option value="AITR">AITR</option>
+					</select>
+					<label><b>Numero Token</b></label>
+					<input type="text" class="form-control" placeholder="Num Token" name="Numero Token"/>
+				</div>
 				<!-- Modal footer -->
 				<div class="modal-footer">
-					<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Annulla</button>
+					<button type="button" class="btn btn-success">Inserisci</button>
 				</div>
 			</div>
 		</div>
